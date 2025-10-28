@@ -39,7 +39,7 @@ const page = () => {
           <Project
             title="projeto 1"
             desc="descrição do projeto."
-            link="/projeto1"
+            link="/projects/projeto-1"
           />
         </div>
       </main>
