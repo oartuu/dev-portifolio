@@ -1,14 +1,5 @@
 import { Nav } from "@/components/template/nav";
 import { Project } from "@/components/template/project";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardTitle } from "@/components/ui/card";
-import {
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemDescription,
-  ItemTitle,
-} from "@/components/ui/item";
 import { Separator } from "@/components/ui/separator";
 
 import { Cal_Sans } from "next/font/google";
@@ -26,7 +17,7 @@ const page = () => {
     >
       <Nav />
 
-      <main className="bg-transparent w-full flex-1 p-8 flex flex-col items-center space-y-6">
+      <main className="bg-transparent w-3/4 flex-1 p-8 flex flex-col items-center space-y-6">
         <div className="px-2 space-y-2 w-full flex flex-col justify-start ">
           <h1 className="text-6xl font-bold text-zinc-50 text-shadow-md text-shadow-zinc-600/60 ">
             Projetos
@@ -35,7 +26,7 @@ const page = () => {
         </div>
         <Separator className="bg-zinc-800/80" />
 
-        <div className="w-3/4  grid grid-cols-3 gap-4 p-4  overflow-y-hidden">
+        <div className="w-full grid grid-cols-3 gap-4 p-4  overflow-y-hidden">
           <Project
             title="projeto 1"
             desc="descrição do projeto."

@@ -34,7 +34,7 @@ export default function Home() {
         <div className="bg-transparent w-96 flex items-center justify-evenly gap-4  text-xl text-zinc-50 [&>a]:hover:underline [&>a]:hover:text-zinc-200  ">
           <Link href={"/projects"}>projetos</Link>
           <Link href={""}>sobre</Link>
-          <Link href={""}>contato</Link>
+          <Link href={"/contacts"}>contato</Link>
         </div>
         <h1 className="text-9xl font-bold text-zinc-50 text-shadow-md text-shadow-zinc-600/60">
           oartuu

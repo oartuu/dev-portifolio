@@ -16,7 +16,7 @@ export function Nav() {
             <Link href={"/projects"}>Projetos</Link>
           </li>
           <li>
-            <Link href={""}>Contato</Link>
+            <Link href={"/contacts"}>Contato</Link>
           </li>
           <li>
             <Link href={""}>Sobre</Link>
