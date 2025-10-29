@@ -29,7 +29,7 @@ const page = () => {
               <div className="border border-zinc-50 rounded-full p-2">
                 <Linkedin className="" />
               </div>
-              <h1 className={`text-3xl ${cal_sans.className} antialiased`}>
+              <h1 className={`text-2xl ${cal_sans.className} antialiased`}>
                 Arthur do Nascimento
               </h1>
               <p className="text-zinc-400 font-light">LinkedIn</p>
@@ -46,7 +46,7 @@ const page = () => {
               <div className="border border-zinc-50 rounded-full p-2">
                 <Mail className="" />
               </div>
-              <h1 className={`text-3xl ${cal_sans.className} antialiased`}>
+              <h1 className={`text-2xl ${cal_sans.className} antialiased`}>
                 artu.donascimento@gmail.com
               </h1>
               <p className="text-zinc-400 font-light">Email</p>
@@ -59,7 +59,7 @@ const page = () => {
               <div className="border border-zinc-50 rounded-full p-2">
                 <Github className="" />
               </div>
-              <h1 className={`text-3xl ${cal_sans.className} antialiased`}>
+              <h1 className={`text-2xl ${cal_sans.className} antialiased`}>
                 oartuu
               </h1>
               <p className="text-zinc-400 font-light">Github</p>

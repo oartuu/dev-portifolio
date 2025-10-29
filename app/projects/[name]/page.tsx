@@ -42,7 +42,7 @@ const page = ({ params }: PageProps) => {
         </p>
 
         <Link
-          href={data.aboutUrl || "#"}
+          href={data.aboutUrl}
           rel="noopener"
           target="blank"
           className="text-zinc-50 text-lg font-bold hover:underline flex gap-2 items-center "
@@ -56,7 +56,7 @@ const page = ({ params }: PageProps) => {
         <div className=" w-[700px] flex flex-col justify-evenly items-center space-y-4">
           <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg">
             <Image
-              src="https://images.unsplash.com/photo-1588345921523-c2dcdb7f1dcd?w=800&dpr=2&q=80"
+              src={data.imgUrl}
               alt="Photo by Drew Beamer"
               fill
               className="h-full w-full rounded-lg object-cover dark:brightness-[0.2] dark:grayscale"
@@ -64,17 +64,7 @@ const page = ({ params }: PageProps) => {
           </AspectRatio>
 
           <p className="text-zinc-950 text-md ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            quasi error odit provident sunt vitae iusto ea non asperiores neque,
-            voluptas id soluta beatae! Vel porro tenetur placeat consequatur
-            qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Possimus, magni laborum! Totam doloremque praesentium eligendi
-            explicabo maxime esse, sint voluptas molestiae exercitationem natus,
-            error similique, placeat temporibus! Blanditiis, quam id?Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Odit modi ipsam saepe
-            autem natus numquam, distinctio nostrum veritatis blanditiis?
-            Doloribus consequatur dicta saepe magnam error sint, atque rem
-            nesciunt iusto.
+            {data.articleText}
           </p>
         </div>
       </div>

@@ -18,7 +18,7 @@ export function Nav() {
           <li>
             <Link href={"/contacts"}>Contato</Link>
           </li>
-          <li>
+          <li className='hidden'>
             <Link href={""}>Sobre</Link>
           </li>
         </ul>

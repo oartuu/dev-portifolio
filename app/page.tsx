@@ -33,14 +33,14 @@ export default function Home() {
       <div className="absolute flex flex-col justify-center items-center space-y-6  ">
         <div className="bg-transparent w-96 flex items-center justify-evenly gap-4  text-xl text-zinc-50 [&>a]:hover:underline [&>a]:hover:text-zinc-200  ">
           <Link href={"/projects"}>projetos</Link>
-          <Link href={""}>sobre</Link>
+          <Link className="hidden" href={""}>sobre</Link>
           <Link href={"/contacts"}>contato</Link>
         </div>
         <h1 className="text-9xl font-bold text-zinc-50 text-shadow-md text-shadow-zinc-600/60">
           oartuu
         </h1>
         <Separator className="bg-zinc-800" />
-        <p className="text-zinc-400">Atualmente trabalhando em ...</p>
+        <p className="text-zinc-400">Atualmente trabalhando em <Link className="text-zinc-50 hover:underline px-2" href={"/projects/G3"}>Project.G3</Link> uma forma simplificada de gerir apresentações musicais.  </p>
       </div>
     </div>
   );
