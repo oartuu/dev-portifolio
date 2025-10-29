@@ -22,7 +22,7 @@ const calSans = Cal_Sans({
 const page = () => {
   return (
     <div
-      className={`relative w-screen h-screen bg-gradient-to-bl from-zinc-950 via-zinc-900 to-zinc-950 flex flex-col justify-between items-center ${calSans.className} antialiased`}
+      className={`relative w-screen h-screen bg-linear-to-bl from-zinc-950 via-zinc-900 to-zinc-950 flex flex-col justify-between items-center ${calSans.className} antialiased`}
     >
       <Nav />
 

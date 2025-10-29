@@ -14,7 +14,7 @@ const calSans = Cal_Sans({
 export default function Home() {
   return (
     <div
-      className={`relative flex items-center justify-center w-screen h-screen bg-gradient-to-bl from-zinc-950 via-zinc-900 to-zinc-950 flex flex-col justify-center items-center ${calSans.className} antialiased`}
+      className={`relative  w-screen h-screen bg-linear-to-bl from-zinc-950 via-zinc-900 to-zinc-950 flex flex-col justify-center items-center ${calSans.className} antialiased`}
     >
       <div className="relative w-full h-screen">
         <Particles
