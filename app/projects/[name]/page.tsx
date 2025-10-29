@@ -7,14 +7,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { use } from 'react'
 import {  Inter} from "next/font/google";
-
+import { projectsData } from '@/lib/projects'
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
 interface PageProps {
   params: Promise <{
-    name: string
+    name: string,
   }>
 }
 
@@ -22,16 +22,9 @@ interface PageProps {
 
 const page = ({ params }: PageProps) => {
   const { name } = use(params)
+  
 
-
-  const data = {
-    title: "teste",
-    description:
-      "descrição do teste Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptates amet hic, ipsam sapiente distinctio assumenda aperiam exercitationem esse! Esse quia in tenetur enim saepe rerum nihil praesentium blanditiis iure?",
-    projectUrl: "https://github.com/oartuu/shine-on-you-crazy-project",
-  };
-
-
+  const data = projectsData.find((project) => project.alias === name)!; 
   return (
     <div
       className={`flex flex-col justify-start space-y-8 min-h-screen max-w-screen bg-zinc-950 ${inter.className} antialiased `}
@@ -45,11 +38,11 @@ const page = ({ params }: PageProps) => {
         </h1>
 
         <p className="text-zinc-50 text-lg w-1/3 text-center">
-          {data.description}
+          {data.desc}
         </p>
 
         <Link
-          href={data.projectUrl}
+          href={data.aboutUrl || "#"}
           rel="noopener"
           target="blank"
           className="text-zinc-50 text-lg font-bold hover:underline flex gap-2 items-center "
@@ -87,6 +80,8 @@ const page = ({ params }: PageProps) => {
       </div>
     </div>
   );
+
 }
+
 
 export default page

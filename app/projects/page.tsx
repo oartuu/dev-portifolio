@@ -1,7 +1,7 @@
 import { Nav } from "@/components/template/nav";
 import { Project } from "@/components/template/project";
 import { Separator } from "@/components/ui/separator";
-
+import { projectsData } from "@/lib/projects";
 import { Cal_Sans } from "next/font/google";
 
 const calSans = Cal_Sans({
@@ -11,6 +11,7 @@ const calSans = Cal_Sans({
 });
 
 const page = () => {
+
   return (
     <div
       className={`relative w-screen h-screen bg-linear-to-bl from-zinc-950 via-zinc-900 to-zinc-950 flex flex-col justify-between items-center ${calSans.className} antialiased`}
@@ -27,11 +28,14 @@ const page = () => {
         <Separator className="bg-zinc-800/80" />
 
         <div className="w-full grid grid-cols-3 gap-4 p-4  overflow-y-hidden">
-          <Project
-            title="projeto 1"
-            desc="descrição do projeto."
-            link="/projects/projeto-1"
-          />
+          {projectsData.map((project) => (
+            <Project
+            key={project.id}
+              title={project.title}
+              desc={project.resume}
+              link={project.link}
+            />
+          ))}
         </div>
       </main>
     </div>
