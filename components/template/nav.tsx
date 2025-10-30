@@ -1,6 +1,5 @@
-import { ArrowLeft} from 'lucide-react';
-import Link from 'next/link';
-
+import { ArrowLeft } from "lucide-react";
+import Link from "next/link";
 
 export function Nav() {
   return (
@@ -10,7 +9,7 @@ export function Nav() {
           <ArrowLeft className="text-zinc-50 hover:cursor-pointer" />
         </Link>
       </div>
-      <div className="[&>ul]:flex [&>ul]:items-center [&>ul]:space-x-9 [&>ul>li>a]:hover:underline [&>ul>li>a]:hover:text-zinc-200 [&>ul>li>a]:text-zinc-50 px-4">
+      <div className="[&>ul]:flex [&>ul]:items-center [&>ul]:space-x-9 [&>ul>li>a]:hover:underline [&>ul>li>a]:hover:text-zinc-200 [&>ul>li>a]:text-zinc-50 md:px-4">
         <ul>
           <li>
             <Link href={"/projects"}>Projetos</Link>
@@ -18,13 +17,8 @@ export function Nav() {
           <li>
             <Link href={"/contacts"}>Contato</Link>
           </li>
-          <li className='hidden'>
-            <Link href={""}>Sobre</Link>
-          </li>
         </ul>
       </div>
     </div>
   );
 }
-
-

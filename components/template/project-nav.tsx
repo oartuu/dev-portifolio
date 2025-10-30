@@ -9,7 +9,7 @@ export function ProjectNav() {
           <ArrowLeft className="text-zinc-50 hover:text-zinc-200 hover:cursor-pointer" />
         </Link>
       </div>
-      <div className="px-4 mr-4">
+      <div className="px-4 md:mr-4">
         <Link href={"https://github.com/oartuu"} rel="noopener" target="blank">
           <Github className="text-zinc-50 hover:text-zinc-200 hover:cursor-pointer" />
         </Link>

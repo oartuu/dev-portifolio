@@ -14,15 +14,17 @@ const inter = Inter({
   display: "swap",
 });
 interface ProjectProps {
-
-    title: string;
-    desc: string;
-    link: string;
+  title: string;
+  desc: string;
+  link: string;
 }
 
-export function Project({title, desc, link}: ProjectProps) {
+export function Project({ title, desc, link }: ProjectProps) {
   return (
-    <Item variant="outline" className={`border-zinc-700/80 ${inter.className} antialiased`}>
+    <Item
+      variant="outline"
+      className={`border-zinc-700/80 ${inter.className} antialiased`}
+    >
       <ItemContent>
         <ItemTitle className="text-zinc-50 text-2xl font-bold">
           {title}

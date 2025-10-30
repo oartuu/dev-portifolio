@@ -1,30 +1,26 @@
-
-import { ProjectNav } from '@/components/template/project-nav'
-import { AspectRatio } from '@/components/ui/aspect-ratio'
-import { Separator } from '@/components/ui/separator'
-import { MoveRight } from 'lucide-react'
-import Image from 'next/image'
-import Link from 'next/link'
-import { use } from 'react'
-import {  Inter} from "next/font/google";
-import { projectsData } from '@/lib/projects'
+import { ProjectNav } from "@/components/template/project-nav";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { Separator } from "@/components/ui/separator";
+import { MoveRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import { use } from "react";
+import { Inter } from "next/font/google";
+import { projectsData } from "@/lib/projects";
 const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
 interface PageProps {
-  params: Promise <{
-    name: string,
-  }>
+  params: Promise<{
+    name: string;
+  }>;
 }
 
-
-
 const page = ({ params }: PageProps) => {
-  const { name } = use(params)
-  
+  const { name } = use(params);
 
-  const data = projectsData.find((project) => project.alias === name)!; 
+  const data = projectsData.find((project) => project.alias === name)!;
   return (
     <div
       className={`flex flex-col justify-start space-y-8 min-h-screen max-w-screen bg-zinc-950 ${inter.className} antialiased `}
@@ -37,7 +33,7 @@ const page = ({ params }: PageProps) => {
           <Separator className="bg-zinc-800/80 " />
         </h1>
 
-        <p className="text-zinc-50 text-lg w-1/3 text-center">
+        <p className="text-zinc-50 text-lg md:w-1/3 text-center px-4">
           {data.desc}
         </p>
 
@@ -52,8 +48,8 @@ const page = ({ params }: PageProps) => {
         </Link>
       </div>
 
-      <div className="w-full h-auto bg-white flex-none flex flex-col justify-evenly items-center py-8">
-        <div className=" w-[700px] flex flex-col justify-evenly items-center space-y-4">
+      <div className="w-full h-auto bg-white flex-none flex flex-col justify-evenly items-center py-8 px-4">
+        <div className=" md:w-[700px] flex flex-col justify-evenly items-center space-y-4">
           <AspectRatio ratio={16 / 9} className="bg-muted rounded-lg">
             <Image
               src={data.imgUrl}
@@ -63,15 +59,11 @@ const page = ({ params }: PageProps) => {
             />
           </AspectRatio>
 
-          <p className="text-zinc-950 text-md ">
-            {data.articleText}
-          </p>
+          <p className="text-zinc-950 text-md ">{data.articleText}</p>
         </div>
       </div>
     </div>
   );
+};
 
-}
-
-
-export default page
+export default page;
