@@ -39,7 +39,7 @@ export const projectsData: ProjectData[] = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Project.G3",
     desc: "Plataforma para gerenciamento de agendas e repertórios de bandas e grupos musicais.",
     resume: "Plataforma para gestão de bandas e grupos musicais",
@@ -50,5 +50,18 @@ export const projectsData: ProjectData[] = [
       "https://images.unsplash.com/photo-1511379938547-c1f69419868d?w=800&dpr=2&q=80",
     articleText:
       "O G3 permite que músicos e organizadores gerenciem eventos, repertórios e votações de músicas em um só lugar. Com autenticação, papéis de usuário e notificações automáticas, o sistema facilita a comunicação e organização de grupos musicais.",
+  },
+  {
+    id: 4,
+    title: "Portfolio",
+    desc: "Portifólio pessoal, um espaço para expor meus projetos pessoais e acadêmicos",
+    resume: "Este website",
+    aboutUrl: "https://oartuu.vercel.app",
+    link: "/projects/portfolio",
+    alias: "portfolio",
+    imgUrl:
+      "https://media.licdn.com/dms/image/v2/D4D2DAQHSNZ0gB_vBeg/profile-treasury-image-shrink_800_800/B4DZo2lZzRGgAY-/0/1761852367158?e=1762462800&v=beta&t=dRy6p10cjciZcGJMPNXwFcS20LVLxNZRKH5Eg5K0UY4",
+      
+    articleText:"um espaço para reunir meus projetos, experiências e ideias de forma que refletisse não apenas o meu trabalho, mas também minha identidade como desenvolvedor.Construí o site utilizando Next.js, Tailwind CSS e shadcn/ui, além de outras ferramentas que me permitiram alcançar uma interface moderna, responsiva e com uma ótima performance.Cada detalhe foi pensado para oferecer uma navegação fluida e uma experiência agradável, combinando design minimalista com funcionalidadealgo que considero essencial em qualquer aplicação bem feita.",
   },
 ];
